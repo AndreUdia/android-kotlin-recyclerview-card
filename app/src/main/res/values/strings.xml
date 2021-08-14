@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">questions&amp;answers</string>
+    <string name="finish_questionnaire">FINALIZAR PROVA</string>
+    <string name="answer">RESPONDA</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <TextView
+            tools:text="Example of question What is your favorite food?"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:layout_marginTop="25dp"/>
+        <RadioGroup
+            android:id="@+id/gbtn_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+            <RadioButton
+                tools:text="Answer one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_option_one"
+                android:layout_marginTop="25dp"/>
+            <RadioButton
+                tools:text="Answer two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_option_two"
+                android:layout_marginTop="25dp"/>
+            <RadioButton
+                tools:text="Answer three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_option_three"
+                android:layout_marginTop="25dp"/>
+            <RadioButton
+                tools:text="Answer four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_option_four"
+                android:layout_marginTop="25dp"/>
+        </RadioGroup>
+
+        <Button
+            android:text="@string/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
