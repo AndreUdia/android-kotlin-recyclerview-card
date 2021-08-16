@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="10dp"
-        android:onClick="openCard"
         android:text="@string/finish_questionnaire"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
