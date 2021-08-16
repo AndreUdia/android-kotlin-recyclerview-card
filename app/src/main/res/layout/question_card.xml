@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    app:cardElevation="2dp">
 
     <LinearLayout
         android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp">
+        android:layout_height="wrap_content">
 
         <TextView
             tools:text="Example of question What is your favorite food?"
@@ -18,37 +23,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_title"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="10dp"/>
 
         <RadioGroup
             android:id="@+id/gbtn_options"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="5dp">
             <RadioButton
                 tools:text="Answer one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rbtn_option_one"
-                android:layout_marginTop="25dp"/>
+                android:layout_marginTop="15dp"/>
             <RadioButton
                 tools:text="Answer two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rbtn_option_two"
-                android:layout_marginTop="25dp"/>
+                android:layout_marginTop="15dp"/>
             <RadioButton
                 tools:text="Answer three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rbtn_option_three"
-                android:layout_marginTop="25dp"/>
+                android:layout_marginTop="15dp"/>
             <RadioButton
                 tools:text="Answer four"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rbtn_option_four"
-                android:layout_marginTop="25dp"/>
+                android:layout_marginTop="15dp"/>
         </RadioGroup>
 
         <Button

@@ -3,6 +3,7 @@ package com.cabomaldade.questionsanswers
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView: RecyclerView =  rv_questionnaire
 
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         adapter = QuestionAdapter(listOfQuestions)
         recyclerView.adapter = adapter
     }
